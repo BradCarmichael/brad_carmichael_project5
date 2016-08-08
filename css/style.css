@@ -1,0 +1,412 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+header {
+  background-image: url(../images/lotusHero2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+}
+
+.headerWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.headerWrap p {
+  font-family: 'Philosopher', sans-serif;
+  padding-bottom: 50px;
+  font-size: 1.9rem;
+  margin: 0;
+  color: #18ffff;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  background-color: rgba(195, 176, 195, 0.6);
+  margin: 0px 0 20px 0;
+  border-radius: 35px;
+  padding: 20px 50px 20px 50px;
+  color: #272727;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.country-box label img {
+  width: 30%;
+  padding-bottom: 20px;
+}
+
+.protein-box label img {
+  width: 40%;
+  padding-bottom: 20px;
+}
+
+.protein-box label .resize {
+  padding: 18px 0px;
+  width: 30%;
+}
+
+.drink-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(50% - 10px);
+  margin: 5px;
+  flex-direction: column-reverse;
+}
+
+.content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.country-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(25% - 10px);
+  margin: 5px;
+  flex-direction: column-reverse;
+}
+
+.protein-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(20% - 10px);
+  margin: 5px;
+  flex-direction: column-reverse;
+}
+
+.submitButton {
+  padding: 5px 70px 5px 70px;
+  background-color: #c3b0c3;
+  border: none;
+  border-radius: 3px;
+  border: 1px solid #9c9c9c;
+  transition: background-color .2s;
+  margin-top: 30px;
+  margin-bottom: 75px;
+}
+
+.submitButton:hover {
+  background-color: #a187b0;
+}
+
+.resultsContainer {
+  background-color: rgba(195, 176, 195, 0.6);
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.results h2 {
+  font-size: 2.2rem;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.results img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15px auto;
+  border-radius: 40px;
+  width: 100%;
+}
+
+.recipeBox {
+  padding: 40px;
+  margin-top: 75px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 40px;
+  text-align: center;
+}
+
+.recipeButton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 5px 40px 5px 40px;
+  background-color: #c3b0c3;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px solid 	#9c9c9c;
+  transition: background-color .2s;
+}
+
+.recipeButton:hover {
+  background-color: #a187b0;
+}
+
+.resetWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.resetButton {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.reset {
+  margin-top: 75px;
+  margin-bottom: 30px;
+  padding: 3px 90px 3px 90px;
+  background-color: #c3b0c3;
+  border: none;
+  border-radius: 3px;
+  border: 1px solid 	#9c9c9c;
+  transition: background-color .2s;
+}
+
+.reset:hover {
+  background-color: #a187b0;
+}
+
+footer {
+  background-color: rgba(195, 176, 195, 0.6);
+  height: 75px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+footer p a {
+  color: #272727;
+}
+
+footer p a:hover {
+  color: #a187b0;
+}
+
+@media (max-width: 768px) {
+  .protein-box, .country-box {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+    padding: 50px 5px 0px 5px;
+  }
+  .results h2 {
+    font-size: 1.7rem;
+  }
+  footer {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+    line-height: 15px;
+  }
+}
