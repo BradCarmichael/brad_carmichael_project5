@@ -7,127 +7,139 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
-	<!-- Link -->
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+		<!-- Link -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-	<div class="headerWrap">
-		<h1>South East Asian</h1>
-			<p>Recipe Generator</p>
+	<div class="headerWrap wrapper">
+		<h1>Your Favorite Food Stall</h1>
+			<p>Recipes from Southeast Asia</p>		
 	</div>
 
 	<form action="">
 		<div class="wrapper">
 				<!-- country section -->
 			<fieldset class="clearfix" id="drinks">
+			<div class="title">
+						<h2>Step 1: Pick a country</h2>
+					</div>
 				<div class="content-wrap">
+					
 					<div class="country-box">
-						<input type="radio" name="country" id="thai" value="thai" required>
-						<label for="Thai">
-							<img src="images/th.svg" alt="Flag of Thailand.">
-						</label>
-						<h3>Thailand</h3>
+						<div class="country-border">
+							<input type="radio" name="country" id="thai" value="thai" required>
+							<label for="thai">
+								<img src="images/th.svg" alt="Flag of Thailand.">
+							</label>
+							<h3>Thailand</h3>
+						</div>
 					</div>
 
 					<div class="country-box">
-						<input type="radio" name="country" id="vietnamese" value="vietnamese" required>
-						<label for="vietnamese">
-							<img src="images/vn.svg" alt="Flag of Vietnam.">
-						</label>
-						<h3>Vietnam</h3>
+						<div class="country-border">
+							<input type="radio" name="country" id="vietnamese" value="vietnamese" required>
+							<label for="vietnamese">
+								<img src="images/vn.svg" alt="Flag of Vietnam.">
+							</label>
+							<h3>Vietnam</h3>
+						</div>
 					</div>
 
 					<div class="country-box">
-						<input type="radio" name="country" id="malaysian" value="malaysian" required>
-						<label for="malaysian">
-							<img src="images/my.svg" alt="Flag of Malaysia.">
-						</label>
-						<h3>Malaysia</h3>
+						<div class="country-border">
+							<input type="radio" name="country" id="malaysian" value="malaysian" required>
+							<label for="malaysian">
+								<img src="images/my.svg" alt="Flag of Malaysia.">
+							</label>
+							<h3>Malaysia</h3>
+						</div>
 					</div>
 
 					<div class="country-box">
-						<input type="radio" name="country" id="indonesian" value="indonesian" required>
-						<label for="indonesian">
-							<img src="images/id.svg" alt="Flag of Indonesia.">
-						</label>
-						<h3>Indonesia</h3>
+						<div class="country-border">
+							<input type="radio" name="country" id="indonesian" value="indonesian" required>
+							<label for="indonesian">
+								<img src="images/id.svg" alt="Flag of Indonesia.">
+							</label>
+							<h3>Indonesia</h3>
+						</div>
 					</div>
 				</div> <!-- ./content-wrap -->
 			</fieldset>  <!-- country section ends -->
 			
 			<!-- protein section begins -->
 			<fieldset class="clearfix" id="drinks">
+				<div class="title">
+					<h2>Step 2: Pick a protein or vegetable</h2>
+				</div>
 				<div class="content-wrap">
-
 					<div class="protein-box">
-						<input type="radio" name="protein" id="beef" value="beef" required>
-						<label for="Beef">
-							<img src="images/beef.svg" alt="Logo of a cow.">
-						</label>
-						<h3>Beef</h3>
+						<div class="protein-border">
+							<input type="radio" name="protein" id="beef" value="beef" required>
+							<label for="beef">
+								<img src="images/cow.png" alt="Logo of a cow.">
+							</label>
+							<h3>Beef</h3>
+						</div>
 					</div>
 						
 					<div class="protein-box">
-						<input type="radio" name="protein" id="chicken" value="chicken" required>
-						<label for="Chicken">
-							<img src="images/chicken.svg" alt="Logo of a chicken.">
-						</label>
-						<h3>Chicken</h3>
+						<div class="protein-border">
+							<input type="radio" name="protein" id="chicken" value="chicken" required>
+							<label for="chicken">
+								<img src="images/chicken.png" alt="Logo of a chicken.">
+							</label>
+							<h3>Chicken</h3>
+						</div>
 					</div>
 
 					<div class="protein-box">
-						<input type="radio" name="protein" id="pork" value="pork" required>
-						<label for="Pork">
-							<img src="images/pig.svg" alt="Logo of a pig.">
-						</label>
-						<h3>Pork</h3>
+						<div class="protein-border">
+							<input type="radio" name="protein" id="pork" value="pork" required>
+							<label for="pork">
+								<img src="images/pig.png" alt="Logo of a pig.">
+							</label>
+							<h3>Pork</h3>
+						</div>
 					</div>
 
 					<div class="protein-box">
-						<input type="radio" name="protein" id="veggie" value="vegetarian" required>
-						<label for="Vegetarian">
-							<img  class="resize" src="images/veggies.svg" alt="Logo of a tomato.">
-						</label>
-						<h3>Vegetarian</h3>
+						<div class="protein-border">
+							<input type="radio" name="protein" id="veggie" value="vegetarian" required>
+							<label for="veggie">
+								<img  class="resize" src="images/veggie.png" alt="Logo of a tomato.">
+							</label>
+							<h3>Veggie</h3>
+						</div>
 					</div>
 
 					<div class="protein-box">
-						<input type="radio" name="protein" id="seafood" value="seafood" required>
-						<label for="seafood">
-							<img class="resize" src="images/seafood.svg" alt="Logo of a fish underwater.">
-						</label>
-						<h3>Seafood</h3>
+						<div class="protein-border">
+							<input type="radio" name="protein" id="seafood" value="seafood" required>
+							<label for="seafood">
+								<img class="resize" src="images/fish-bowl.png" alt="Logo of a fish underwater.">
+							</label>
+							<h3>Sea</h3>
+						</div>
 					</div>
 				</div> <!-- ./content-wrap -->
 		 	</fieldset> <!-- protein section ends -->
-
-	        <!-- for lcbo  -->
-			<!-- <fieldset class="clearfix" id="drinks">
-				<div class="content-wrap">
-
-					<div class="drink-box">
-						<input type="radio" name="drink" id="beer" value="beer" required>
-						<label for="Beer">
-							<img src="images/beef.svg" alt="">
-						</label>
-						<h3>Beer</h3>
-					</div>
-						
-					<div class="drink-box">
-						<input type="radio" name="drink" id="wine" value="wine" required>
-						<label for="Wine">
-							<img src="images/chicken.svg" alt=".">
-						</label>
-						<h3>Wine</h3>
-					</div>
-				</div> --> <!-- ./content-wrap -->
-			<!-- </fieldset> -->
-
-			<input class="submitButton" type="submit" id="submitButton">
+			<div class="submit">
+				<input class="submitButton" type="submit" id="submitButton">
+			</div>
 		</div> <!-- end of wrapper -->
 	</form>	<!-- end of form -->
+
+	
 </header>
 
 <section class="resultsContainer">
@@ -139,13 +151,15 @@
 	</div> -->
 
 	<div class="resetWrap">
-		<button  class="reset  hidden">Try Another</button>
+		<button  class="reset  hidden">Try Again</button>
 		</div>
 </section>
 
 <footer class="hidden footer">
+	<div class="twitter">
 	<a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-	<p>Created by <a href="http://bradleycarmichael.com/" target="_blank">Brad Carmichael</a> with the help of many and the <a target="_blank" href="https://developer.yummly.com/">yummmly api.</a> Icons from the <a href="https://thenounproject.com/">Noun Project.</a></p>
+	</div>
+	<p>Created by <a href="http://bradleycarmichael.com/" target="_blank">Brad Carmichael</a> and the <a target="_blank" href="https://developer.yummly.com/">yummmly api.</a> Food icons from the <a href="https://thenounproject.com/">Noun Project.</a></p>
 </footer>
 
 	<!-- jQuery -->
